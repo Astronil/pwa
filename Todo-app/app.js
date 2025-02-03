@@ -37,6 +37,7 @@ async function renderTasks() {
     }
   });
 }
+//get Tasks From Firestore
 async function getTasksFromFirestore() {
   var data = await getDocs(collection(db, "todos"));
   let userData = [];
