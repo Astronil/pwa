@@ -46,6 +46,7 @@ async function getTasksFromFirestore() {
   });
   return userData;
 }
+//Sanitize the input 
 function sanitizeInput(input) {
   const div = document.createElement("div");
   div.textContent = input;
